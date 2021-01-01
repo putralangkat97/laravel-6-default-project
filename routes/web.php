@@ -11,6 +11,7 @@ Route::middleware(['auth'])
     });
 
 Route::namespace('Auth')
+    ->middleware(['guest'])
     ->group(function () {
         Route::get('/register', 'RegisterController@index')
             ->name('register');
