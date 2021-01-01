@@ -17,9 +17,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info">
-                            <h5 class="mb-0 text-white nav-user-name">John Abraham</h5>
-                            <span class="status"></span>
-                            <span class="ml-2">Available</span>
+                            <h5 class="mb-0 text-white nav-user-name">{{ auth()->user()->name }}</h5>
                         </div>
                         <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                         <form action="{{ route('logout') }}" method="POST">
