@@ -11,7 +11,7 @@
                         Menu
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="{{ route('dashboard') }}">
                             <i class="fas fa-fw fa-tachometer-alt pb-1"></i>Dashboard
                         </a>
                     </li>
